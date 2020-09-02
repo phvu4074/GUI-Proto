@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="phone.css">
+  </head>
+  <body>
+    <div class="className" id="tab_bar">
+    	<button class="className" id="phone_button">Dialer</button>
+    	<button class="className" id="list_button">Contact List</button>
+    	<button class="className" id="add_button">Add Contact</button>
+    </div>
+    <div class="className" id="content">
+    	<div class="className" id="phone_dialer">
+    		<form name="calculator">
+         <table>
+            <tr>
+               <td colspan="4">
+                  <input type="text" name="display" id="display" disabled>
+               </td>
+            </tr>
+            <tr>
+               <td><input type="button" name="one" value="1" onclick="calculator.display.value += '1'"></td>
+               <td><input type="button" name="two" value="2" onclick="calculator.display.value += '2'"></td>
+               <td><input type="button" name="three" value="3" onclick="calculator.display.value += '3'"></td>
+            <tr>
+               <td><input type="button" name="four" value="4" onclick="calculator.display.value += '4'"></td>
+               <td><input type="button" name="five" value="5" onclick="calculator.display.value += '5'"></td>
+               <td><input type="button" name="six" value="6" onclick="calculator.display.value += '6'"></td>
+            </tr>
+            <tr>
+               <td><input type="button" name="seven" value="7" onclick="calculator.display.value += '7'"></td>
+               <td><input type="button" name="eight" value="8" onclick="calculator.display.value += '8'"></td>
+               <td><input type="button" name="nine" value="9" onclick="calculator.display.value += '9'"></td>
+            </tr>
+            <tr>
+               <td><input type="button" name="pound" value="*" onclick="calculator.display.value += '*'"></td>
+               <td><input type="button" name="zero" value="0" onclick="calculator.display.value += '0'"></td>
+               <td><input type="button" name="hash" value="#" onclick="calculator.display.value += '#'"></td>
+            </tr>
+            <tr>
+               <td><input type="button" id="clear" name="clear" value="Dial" onclick="calculator.display.value = ''"></td>
+               <td><input type="button" id="clear" name="clear" value="Clear" onclick="calculator.display.value = ''"></td>
+            </tr>
+         </table>
+      </form>
+    	</div>
+    	<div class="className" id="contact_list">
+    		<ul>
+  			<li>Robert Drake</li>
+  			<li>Emma Frost</li>
+  			<li>Doreen Green</li>
+  			<li>Jean Grey</li>
+  			<li>James Howlet</li>
+  			<li>Ororo Munroe</li>
+  			<li>Katherine Pryde</li>
+  			<li>Plotr Rasputin</li>
+  			<li>Scott Summers</li>
+  			<li>Kurt Wagner</li>
+  			<li>Warren Worthington</li>
+  			<li>Charles Xavier</li>
+			</ul>
+    	</div>
+    	<div class="className" id="add_contact">
+    		<form>
+  				<label for="name">Name</label>
+  				<br>
+  				<input id="name" placeholder="Jane Smith">
+				<br>
+  				<label for="phone_number">Phone Number</label>
+  				<br>
+  				<input id="phone_number" placeholder="123-456-7890">
+				<br>
+  				<label for="email">Email</label>
+  				<br>
+  				<input id="email" placeholder="jane.smith@colorado.edu">
+  				<br>
+  				<input type="reset" value="Add Contact">
+  				<input type="reset" value="reset">
+			</form>
+    	</div>
+    </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="phone.js"></script>
+  </body>
+</html>
